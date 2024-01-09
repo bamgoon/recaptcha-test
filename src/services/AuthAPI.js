@@ -9,7 +9,8 @@ const login = async (reqBody) => {
       axios
         .post('/recaptcha/api/siteverify', null, {
           params: {
-            secret: process.env.REACT_APP_RECAPTCHA_V2_SECRET_KEY,
+            // secret: process.env.REACT_APP_RECAPTCHA_V2_SECRET_KEY,
+            secret: process.env.REACT_APP_RECAPTCHA_V3_SECRET_KEY,
             response: token,
           },
         })
